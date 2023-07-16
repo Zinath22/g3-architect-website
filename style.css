@@ -7,6 +7,7 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+
 .text-light-gray {
     color: #727272;
 
@@ -34,6 +35,7 @@
 header {
     background: rgba(235, 6, 182, 0.1);
     padding: 50px 240px;
+    overflow: hidden;
 }
 
 nav {
@@ -42,7 +44,7 @@ nav {
     align-items: center;
 }
 
-nav>ul {
+nav > ul {
     display: flex;
 }
 
@@ -84,7 +86,8 @@ nav li a {
 /* main styles */
 main {
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 70px auto;
+    overflow: hidden;
 }
 
 /* team style  */
@@ -219,7 +222,10 @@ main {
 @media screen and (max-width: 576px) {
     header {
         padding: 20px;
+      
+        
     }
+    
 
     nav,
     .team-container,
@@ -261,12 +267,13 @@ main {
 @media screen and (min-width:576px) and (max-width: 960px) {
     header {
         padding: 50px;
+       
     }
 
     nav,
     .feature,
     .team-container,
-    .sponser-img-container {
+    .sponser-img-container{
         flex-direction: column;
     }
 }
